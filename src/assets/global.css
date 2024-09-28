@@ -1,0 +1,79 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Global Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .font-large {
+    font-size: 1.5rem;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  .padded {
+    padding: 20px;
+  }
+  
+  /* Colors and Effects */
+  :root {
+    --primary-purple: #bb86fc;
+    --primary-gold: #ffd700;
+    --background-dark: #000;
+    --surface-dark: #1e1e1e;
+    --text-light: #fff;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  a:hover, button:hover {
+    color: var(--primary-purple);
+  }
